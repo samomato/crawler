@@ -429,7 +429,7 @@ def main():
     for com in seed:
         i += 1
         financial_crawler(year, season, com, sql=True)
-        print(str(round(i/length*100, 3))+'%', 'No.{}'.format(i), '\n')
+        print(str(round(i/length*100, 2))+'%', 'No.{}'.format(i), '\n')
 
     # For test only:
     # dffr = financial_crawler(2018, 1, '2114', sql=True)
